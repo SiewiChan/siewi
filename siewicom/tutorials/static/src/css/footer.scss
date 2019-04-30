@@ -1,0 +1,23 @@
+@import "init";
+@import "array";
+
+footer{
+  background-color: #fafafa;
+  margin-top: 20px;
+  height: 40px;
+  clear: both;
+
+
+  .row{
+    width: $pagewidth;
+    margin: 0 auto;
+    text-align: center;
+
+    .footer-info{
+      line-height: 40px;
+      span{
+        margin-left: 10px;
+      }
+    }
+  }
+}

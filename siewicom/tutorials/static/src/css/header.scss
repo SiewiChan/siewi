@@ -1,0 +1,52 @@
+@import "init";
+@import "array";
+
+header {
+  height: $navheight;
+  background-color: $theme;
+  overflow: hidden;
+
+  .row {
+    width: $pagewidth;
+    margin: 0 auto;
+    overflow: hidden;
+    height: $navheight;
+
+    .logo {
+      float: left;
+      width: 200px;
+      height: $navheight;
+      text-align: center;
+      line-height: $navheight;
+      text-indent: -9999px;
+    }
+
+    .nav {
+      float: left;
+
+      a {
+        float: left;
+        margin-left: 20px;
+        line-height: $navheight;
+        color: #fff;
+        font-weight: bold;
+      }
+
+    }
+
+    .search {
+      float: right;
+      margin-right: 28px;
+      line-height: $navheight;
+
+      .search-infor {
+        height: 30px;
+        width: 260px;
+        padding-left: 10px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+      }
+    }
+  }
+}

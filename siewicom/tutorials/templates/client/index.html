@@ -1,0 +1,57 @@
+{% extends 'client/base.html' %}
+
+{# 此处设置文件的网页的标题 (title) #}
+{% block title %}
+    思维教程&nbsp;|&nbsp;首页
+{% endblock %}
+
+{# 以下内容为首页的左侧分类清单 (navbar) #}
+{% block navbar %}
+
+    {% for category in categories %}
+        <a class="navbar-link" href="">
+            <i class="fa fa-bars"></i>
+            <span>{{ category.category }}</span>
+        </a>
+    {% endfor %}
+
+{% endblock %}
+
+
+{#以下部分是文章的详细清单 (tutorials)#}
+{% block tutorials %}
+    {% for category in categories %}
+        <div class="tutorials-list">
+            <div class="tutorials-title">
+                <p>
+                    <i class="fa fa-folder-open"></i>
+                    <span>{{ category.category }}</span>
+                </p>
+            </div>
+            {% for tutorial in category.tutorials %}
+                <div class="tutorials-introduce">
+                                 {# 设置教程的链接  #}
+                    <a class="tutorial-link" href="{%url 'article' category.category category.pk %}">
+
+                        <h4 class="title">
+                            <i class="fa fa-book"></i>
+                            {{ tutorial.title }}
+                        </h4>
+                        <div class="introduce">
+                            <div class="img">
+                                <img src="{{ MEDIA_URL }}{{ tutorial.image}}" height="60px" width="60px" alt="Nothing">
+                            </div>
+                            <div class="short-infor">
+                                <p>{{ tutorial.description|truncatechars:38 }}</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    {% empty %}
+        <span>Nothing</span>
+    {% endfor %}
+
+{% endblock %}
+

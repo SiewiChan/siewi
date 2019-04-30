@@ -1,0 +1,138 @@
+@import "header";
+@import "array";
+@import "footer";
+
+.content{
+  margin-top: 20px;
+
+  .row{
+    width: $pagewidth;
+    margin: 0 auto;
+
+    .navbar{
+      width: $leftNavWidth;
+      height: 500px;
+      float: left;
+      border-radius: 5px;
+      border: 1px solid #f6f6f6;
+
+      .navbar-title{
+        background-color: #f6f6f6;
+        border-radius: 3px;
+
+        .navbar-phrase{
+          padding-left: 10px;
+          line-height: 40px;
+          font-size: 1.1em;
+
+          i{
+            color:#0c82ff;
+          }
+          span{
+            margin-left: 10px;
+          }
+        }
+      }
+      .navbar-list{
+        .navbar-link{
+          line-height: 35px;
+          display: block;
+          border-bottom: 1px solid #f6f6f6;
+          padding-left: 10px;
+          i{
+            color: #0c82ff;
+          }
+
+          span{
+            margin-left: 10px;
+          }
+        }
+
+      }
+
+    }
+    .tutorials-navbar{
+      //background-color: red;
+      width: $pagewidth - $leftNavWidth - 20px;
+      float: right;
+      border: 1px solid #f6f6f6;
+      border-radius: 5px;;
+
+    //  tutorials-list
+      .tutorials-list{
+        padding: 0 20px 20px 20px;
+        //title
+        .tutorials-title{
+          border-bottom: 1px solid #f6f6f6;
+          line-height: 40px;
+          font-size: 1.2em;
+
+          i{
+            color:#0c82ff;
+          }
+
+          span{
+            margin-left: 10px;
+          }
+        }
+
+      //  tutorilas-introduce
+        .tutorials-introduce{
+          overflow: hidden;
+
+          .tutorial-link{
+            width: 345px;
+            display: block;
+            float: left;
+            overflow: hidden;
+            background-color: #f6f6f6;
+            overflow:hidden ;
+            margin-right: 16px;
+            margin-top: 15px;
+
+            // h4 title
+            h4{
+              line-height: 40px;
+              margin-left: 20px;
+              margin-bottom: 5px;
+
+              i{
+                margin-right: 10px;
+              }
+            }
+
+            // shore infor
+            .introduce{
+              overflow: hidden;
+
+              .img{
+                width: 60px;
+                height: 60px;
+                float: left;
+                margin: 0 15px 20px 20px;
+
+              }
+              .short-infor{
+                float: left;
+                margin-right: 20px;
+                width: 220px;
+                height: 50px;
+                background-color: #fff;
+                padding: 5px;
+                p{
+                  text-indent: 2em;
+                }
+
+              }
+
+            }
+          }
+
+        }
+
+      }
+
+    }
+  }
+}
+

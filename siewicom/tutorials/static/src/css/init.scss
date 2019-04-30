@@ -1,0 +1,39 @@
+body, ol, ul, li, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {
+  margin: 0;
+  padding: 0
+}
+
+img {
+  border: 0;
+  vertical-align: top
+}
+
+li {
+  list-style: none
+}
+
+iframe {
+  border: none
+}
+
+html {
+  height: 100%;
+  font-size: 14px
+}
+
+body {
+  height: 100%;
+  font: 400 1em/1.8 'Microsoft Yahei', 'PingFang SC', 'Avenir', 'Segoe UI', 'Hiragino Sans GB', STHeiti, 'Microsoft Sans Serif', 'WenQuanYi Micro Hei', sans-serif
+}
+
+a {
+  color: #333;
+  text-decoration: none
+}
+
+a:hover {
+  color: #0c82ff
+}
+
+
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 此处设置网页的标题 -->
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="./static/dist/css/index.min.css">
+    <link rel="stylesheet" href="./static/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+
+<!-- 这是导航区域 -->
+<header>
+    <div class="row">
+        <div class="logo">
+            <a href="http://www.siewi.com">
+                思维教程 -- 分享快乐
+            </a>
+
+        </div>
+        <div class="nav">
+            <ul>
+                <a href="">
+                    <li>Index</li>
+                </a>
+                <a href="">
+                    <li>HTML/CSS</li>
+                </a>
+                <a href="">
+                    <li>Siwi Note</li>
+                </a>
+                <a href="">
+                    <li>User Guide</li>
+                </a>
+                <a href="">
+                    <li>Download</li>
+                </a>
+                <a href="">
+                    <li>Download</li>
+                </a>
+                <a href="">
+                    <li>Download</li>
+                </a>
+            </ul>
+        </div>
+        <div class="search">
+            <input type="text" class="search-infor" placeholder="Search">
+        </div>
+    </div>
+</header>
+
+<!-- 这是 Content 区域 -->
+<div class="content">
+    <div class="row">
+        <div class="navbar">
+            <div class="navbar-title">
+                <p class="navbar-phrase">
+                    <i class="fa fa-list"></i>
+                    <span>所有分类</span>
+                </p>
+            </div>
+            <div class="navbar-list">
+                <!-- 以下内容为首页的左侧分类清单 (navbar) -->
+                {% block navbar %}
+
+                {% endblock %}
+            </div>
+        </div>
+        <div class="tutorials-navbar">
+            <!-- 以下部分是文章的详细清单 (tutorials) -->
+            {% block tutorials %}
+            
+            {% endblock %}
+        </div>
+    </div>
+</div>
+
+<!-- 这是 Footer 区域 -->
+<footer>
+    <div class="row">
+        <div class="footer-info">
+            <span>Copyright &copy; 2017-2019</span>
+            <span>Siewi Tutorials</span>
+            <span>No:12132132131</span>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
